@@ -9,6 +9,7 @@
 " --------------
 
 if !has("gui_running") && &t_Co < 256
+  echo "Monokai theme failed: no gui_running or not support 256 color. Check your $TERM"
   finish
 endif
 
